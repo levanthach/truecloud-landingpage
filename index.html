@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>TrueCloud</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/fa.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="host_version">
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="z-index: 9999999">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" style="padding: 0">Đăng Ký Dịch vụ</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="name" placeholder="Họ tên" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" name="phone" placeholder="Số điện thoại" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" di="enterprise" placeholder="Doanh nghiệp" type="text">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1" style="margin-left: 15px;">
+										Đăng Ký
+									</button>
+									
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="/">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="#features" id="off1">Tính năng </a></li>
+						<li class="nav-item"><a class="nav-link" href="#pricing" id="off2">Bảng giá</a></li>
+						<li class="nav-item"><a class="nav-link" href="https://vinacis.com/knowledge?slug=cloudnode" target="_blank">Hướng dẫn</a></li>
+						<li class="nav-item"><a class="nav-link" href="#footer" id="off3">Liên hệ</a></li>
+						
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Đăng Ký</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/slider-01.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-right">
+									<div class="big-tagline">
+										<h2><strong>Cloud Server</strong> Hight Performace</h2>
+										<p class="lead">Năng lực xử lý lớn, hình thức sử dụng Self Service </p>
+											<a href="#"  data-toggle="modal" data-target="#login" class="hover-btn-new"><span>Đăng ký</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/slider-02.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-left">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight"><strong>Cloud Server</strong>Hight Performace</h2>
+										<p class="lead" data-animation="animated fadeInLeft">Tài nguyên hệ thống riêng - có sẵn môi trường Kubernetes</p>
+											<a href="#"  data-toggle="modal" data-target="#login" class="hover-btn-new"><span>Đăng ký</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<div class="carousel-item">
+				<div id="home" class="first-section" style="background-image:url('images/slider-03.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-center">
+									<div class="big-tagline">
+										<h2 data-animation="animated zoomInRight"><strong>Cloud Servers</strong> Hight Performace</h2>
+										<p class="lead" data-animation="animated fadeInLeft">Cloud Server VIP được đội ngũ VinaCIS tâm huyết, nhiều năm kinh nghiệm và khát khao mong muốn mang lại một dịch vụ máy chủ Cloud trong nước ổn định, hiệu suất cao, bảo mật tốt.</p>
+											<a href="#"  data-toggle="modal" data-target="#login" class="hover-btn-new"><span>Đăng ký</span></a>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										
+									</div>
+								</div>
+							</div><!-- end row -->            
+						</div><!-- end container -->
+					</div>
+				</div><!-- end section -->
+			</div>
+			<!-- Left Control -->
+			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="fa fa-angle-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+			<!-- Right Control -->
+			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	
+
+	  <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Tại sao nên chọn Cloud Server VIP ?</h3>
+                    <!-- <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p> -->
+                </div>
+            </div><!-- end title -->
+
+            <hr class="invis"> 
+
+            <div class="row"> 
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <i class="flaticon-server global-radius effect-1 alignleft"></i>
+                        <h3>Triển khai nhanh</h3>
+                        <p>Chỉ 1 phút để tạo VM và hệ thống trong vòng vài phút
+						
+						</p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                       
+                        <i class="flaticon-locked global-radius effect-1 alignleft"></i>
+                        <h3>An toàn dữ liệu</h3>
+                        <p>Công nghệ lưu trữ nhân bản 3 lần và tự động sao lưu dữ liệu tầng hệ thống
+						
+						</p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <i class="flaticon-world-wide-web global-radius effect-1 alignleft"></i>
+                        <h3>Không giới hạn </h3>
+                        <p>Hỗ trợ tạo không giới hạn số lượng VMs/ Containers
+						
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <i class="flaticon-cer-file-format global-radius effect-1 alignleft"></i>
+                        <h3>Network lớn</h3>
+                        <p>Băng thông Uplink Internet tới ISP 160GB, nội bộ 10Gbps- 40Gbps 
+						</p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+
+            <hr class="hr3"> 
+
+            <div class="row"> 
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <i class="flaticon-cup global-radius effect-1 alignleft"></i>
+                        <h3>Tối ưu chi phí đầu tư</h3>
+                        <p>Không chi phí đầu tư thiết bị, nhân sự vận hành hệ thống 
+						
+						</p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
+               
+
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <i class="flaticon-locked global-radius effect-1 alignleft"></i>
+                        <h3>Phần cứng đồng bộ</h3>
+                        <p>Chip Intel, Ram DDR4, 100% SSD tốc độ xử lý 40,000 IOPS
+					
+						</p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <i class="flaticon-cloud-computing-1 global-radius effect-1 alignleft"></i>
+                        <h3>Linh hoạt mở rộng</h3>
+                        <p>Chủ động tăng/ giảm cấu hình theo nhu cầu
+						</p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="icon-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <i class="flaticon-locked global-radius effect-1 alignleft"></i>
+                        <h3>Tự động Failover</h3>
+                        <p>Chỉ 90s tự động chuyển sang máy chủ dự phòng
+						</p>
+                    </div><!-- end icon-wrapper -->
+                </div><!-- end col -->
+				<br>
+				<div class="col-lg-12">
+                    <div class="customwidget text-center">
+                    	<p><a href="#" class="hover-btn-new" data-toggle="modal" data-target="#login"><span>Đăng Ký</span></a></p>
+                        <p>Cam kết hoàn tiền trong vòng 30 ngày nếu không hài lòng với dịch vụ Cloud Server VIP.</p>
+                    </div>
+                </div>
+            </div><!-- end row -->
+
+        </div><!-- end container -->
+    </div><!-- end section -->
+	
+	<section class="page-section" id="features">
+		<br><br>
+		<div class="container">
+			 <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+
+                    <h3>Tính năng chính Cloud Server VIP</h3>
+                  
+                </div>
+            </div><!-- end title -->
+			<div class="timeline">
+				<div class="timeline__wrap">
+					<div class="timeline__items">
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>Quản lý User & Project</h2>
+								
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>Quản lý VM</h2>
+								
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>Quản lý Kubernetes</h2>
+							
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Quản lý Images</h2>
+								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p> -->
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-01">
+								<h2>Quản lý Volumes</h2>
+								
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-02">
+								<h2>Quản lý Private Virtual Networks</h2>
+								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque condimentum lacus dapibus.</p> -->
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-03">
+								<h2>Quản lý Virtual Rounters</h2>
+								
+							</div>
+						</div>
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Quản lý Floading IP Address</h2>
+							</div>
+						</div>
+
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Quản lý Load Balancers</h2>
+							</div>
+						</div>
+
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Quản lý SSH Keys</h2>
+							</div>
+						</div>
+
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Toàn quyền quản trị hệ thống</h2>
+							</div>
+						</div>
+
+						<div class="timeline__item">
+							<div class="timeline__content img-bg-04">
+								<h2>Giám sát tài nguyên qua web</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<section id="pricing">
+	 <div class="section lb">
+        <div class="container">
+            <div class="section-title text-center">
+            	<br><br>
+                <h3>BẢNG GIÁ</h3>
+                <p><em>Khi bạn lựa chọn dùng dịch vụ Cloud VIP, bạn sẽ nhận tài khoản bàn giao với cấu hình tối thiểu 10 vCore, 20GB RAM, 200GB SSD với 5 IP. Khi bạn bắt đầu tạo VM thì sẽ bắt đầu tính phí theo bảng giá bên dưới
+					<br>(Giá trên chưa bao gồm thuế VAT)
+                </em></p>
+                <br>
+				<div class="dmoain-pricing">
+					<div class="table-responsive-sm">
+						<table>
+							<thead>
+								<tr class="domain-head">
+									<th scope="col">
+										Tài nguyên
+									</th>
+									<th scope="col">
+										Đơn vị
+									</th>
+									<th scope="col">
+										Đơn giá/tháng
+									</th>
+			
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-label="DOMAIN NAME">CPU</td>
+									<td data-label="registration pricing">vCore</td>
+									<td data-label="renewal pricing">200.000</td>
+								</tr>
+
+								<tr>
+									<td data-label="DOMAIN NAME">RAM</td>
+									<td data-label="registration pricing">GB</td>
+									<td data-label="renewal pricing">100.000</td>
+								</tr>
+
+								<tr>
+									<td data-label="DOMAIN NAME">Cloud Storage </td>
+									<td data-label="registration pricing">GB</td>
+									<td data-label="renewal pricing">5.000</td>
+								</tr>
+
+								<tr>
+									<td data-label="DOMAIN NAME">IP Public</td>
+									<td data-label="registration pricing">IP</td>
+									<td data-label="renewal pricing">5.000</td>
+								</tr>
+
+								<tr>
+									<td data-label="DOMAIN NAME">Cloud Storage </td>
+									<td data-label="registration pricing">GB</td>
+									<td data-label="renewal pricing">800.000</td>
+								</tr>
+
+								<tr>
+									<td data-label="DOMAIN NAME">Traffic</td>
+									<td data-label="registration pricing">1.000 GB</td>
+									<td data-label="renewal pricing">500.000</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<br>
+				<div class="col-lg-12">
+                    <div class="customwidget text-center">
+                    	<p><a href="#" class="hover-btn-new" data-toggle="modal" data-target="#login"><span>Đăng Ký</span></a></p>
+                        <p>Cam kết hoàn tiền trong vòng 30 ngày nếu không hài lòng với dịch vụ Cloud Server VIP.</p>
+                    </div>
+                </div>
+            </div><!-- end title -->
+        </div><!-- end container -->
+    </div>
+</section>
+
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+        	<div class="section-title text-center">
+	        	<h3>CÁC DỊCH VỤ KHÁC</h3>
+	        </div>
+        	<div class="row logos">
+	        	<div class="col-xs-6 col-md-4">
+	        		<div class="logo-ava circleBox">
+	        			<img src="images/baas.png" alt="Logo baas" class="img-repsonsive">
+	        		</div>
+	        		<div class="title-logo"><strong>BaaS</strong> <br> Backup as a Service</div>
+	        		<div class="logo-btn btn btn-success"><a href="https://baas.vn/" target="_blank">Xem thêm</a></div>
+	        	</div>
+	        	<div class="col-xs-6 col-md-4">
+	        		<div class="logo-ava circleBox">
+	        			<img src="images/cloudsafe.png" alt="logo CloudSafe" class="img-repsonsive">
+	        		</div>
+	        		<div class="title-logo"><strong>CloudSafe</strong> <br> Web Application Firewall</div>
+	        		<div class="logo-btn btn btn-success"><a href="https://cloudsafe.vn/" target="_blank">Xem thêm</a></div>
+	        	</div>
+	        	<div class="col-xs-6 col-md-4">
+	        		<div class="logo-ava circleBox">
+	        			<img src="images/vietnamcdn.png" alt="Logo VietnamCDN" class="img-repsonsive">
+	        		</div>
+	        		<div class="title-logo"><strong>VietnamCDN</strong> <br> Content Network Delivery</div>
+	        		<div class="logo-btn btn btn-success"><a href="https://vietnamcdn.com/" target="_balnk">Xem thêm</a></div>
+	        	</div>
+				<div class="col-md-2"></div>
+	        	<div class="col-xs-6 col-md-4">
+	        		<div class="logo-ava circleBox">
+	        			<img src="images/s3.png" alt="Icon S3" class="img-repsonsive">
+	        		</div>
+	        		<div class="title-logo"><strong>S3 Storage</strong> <br> Lưu trữ dữ liệu nội dung số</div>
+	        		<div class="logo-btn btn btn-success"><a href="http://storage.com.vn/" target="_blank">Xem thêm</a></div>
+	        	</div>
+
+	        	<div class="col-xs-6 col-md-4">
+	        		<div class="logo-ava circleBox">
+	        			<img src="images/draas.png" alt="Logo drass" class="img-repsonsive">
+	        		</div>
+	        		<div class="title-logo"><strong>DraaS </strong><br> DR as a Service</div>
+	        		<div class="logo-btn btn btn-success"><a href="https://baas.vn/disaster-recovery" target="_blank">Xem thêm</a></div>
+	        	</div>
+
+
+                <!-- <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/baas.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/cloudsafe.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/vietnamcdn.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/s3.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/spla.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/draas.png" alt="" class="img-repsonsive"></a>
+                </div> -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Liên hệ</h3>
+                        </div>
+                        <h4 style="color:#fff">VinacIS Group</h4>
+                        <p> Địa chỉ: Up Co-working Space <br>
+268 Lý Thường Kiệt, Phường 14, Quận 10, HCM</p>
+                        <p>Hotline: 0985 600 766 <br>
+                        	Email: contact@vinacis.com <br>
+                        	Website: <a href="https://vinacis.com" target="_blank" style="color: #fff">www.vinacis.com</a>
+                        </p>
+                        
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+
+				<div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Đăng Ký tư vấn</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><input type="text" name="name" placeholder="Họ tên"></li>
+                            <li><input type="email" name="name" placeholder="Email"></li>
+                            <li><input type="text" name="phone" placeholder="Số điện thoại"></li>
+                            <li><input type="text" name="enterprise" placeholder="Doanh nghiệp"></li>
+                            <li></li>
+
+                        </ul><!-- end links -->
+						<button type="submit" class="btn btn-light btn-radius">
+							Đăng Ký
+						</button>
+
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-left">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020</p>
+                </div>
+
+                <div class="footer-right">
+                    <ul class="footer-links-soi">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					</ul><!-- end links -->
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+</body>
+</html>
