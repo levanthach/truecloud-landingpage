@@ -27,7 +27,9 @@ body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.80857;
 }
-
+#home {
+  background-image:url('images/main-banner.png');
+}
 .row.logos {
     text-align: center;
 }
@@ -788,6 +790,8 @@ a img.aligncenter {
   color: #fff;
   padding: 10px 30px;
   font-weight: 500;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -945,7 +949,6 @@ a img.aligncenter {
   top: 0px;
   left: 0px;
     display: block;
-    background: rgba(0,0,0,0.5);
 }
 
 .first-section h2 {
@@ -2486,7 +2489,7 @@ select.mobile-device {
     color: #f4f4f4 !important;
 }
 
-.footer-links li {
+.footer-links .mauticform-row {
     margin-bottom: 10px;
     padding-bottom: 5px!important;
     display: block;
@@ -2494,7 +2497,7 @@ select.mobile-device {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
     padding-bottom: 10px;
 }
-.footer-links li input {
+.footer-links .mauticform-row .mauticform-input {
   background: none;
     width: 100%;
     color: #fff;
@@ -2778,13 +2781,13 @@ select.mobile-device {
 }
 
 .btn-light {
-    padding: 10px 30px;
-    font-size: 18px;
+    padding: 10px 30px!important;
+    font-size: 18px!important;;
     border: 1px solid #ffffff !important;
     color: #ffffff;
-    background-color: transparent;
-    margin: auto;
-    /* display: block; */
+    background-color: transparent!important;
+    margin: auto!important;
+     display: block!important; 
     /* text-align: center; */
 }
 
@@ -3293,8 +3296,64 @@ button:focus{
   outline: none!important;
 }
 
+@media only screen and (max-width: 320px){
+  .navbar-brand {
+    width: 50%;
+  }
+  .navbar-brand img {
+    width: 150%;
+  }
+}
+
 @media only screen and (max-width: 768px){
   .top-navbar .bg-light {
      padding-left: 15px!important; 
     padding-right: 15px!important;
+  }
+  #home {
+    background-image:url('images/mobile_banner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .first-section .big-tagline a {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 20px;
+  }
+  .box-slider {
+    height: 83%;
+  }
+  div#mauticform_landingpagetruecloud_submit {
+    margin-bottom: 0;
+  }
 }
+
+
+/*Style Mautic form*/
+
+  .mauticform_wrapper { max-width: 100%; margin: auto;  }
+  .mauticform-innerform {}
+  .mauticform-post-success {}
+  .mauticform-name { font-weight: bold; font-size: 1.5em; margin-bottom: 3px; }
+  .mauticform-description { margin-top: 2px; margin-bottom: 10px; }
+  .mauticform-error { margin-bottom: 10px; color: red; }
+  .mauticform-message { margin-bottom: 10px;color: green; }
+  .mauticform-row { display: block; margin-bottom: 20px; }
+  .mauticform-label { font-size: 1.1em; display: block; font-weight: bold; margin-bottom: 5px; }
+  .mauticform-row.mauticform-required .mauticform-label:after { color: #e32; content: " *"; display: inline; }
+  .mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }
+  .mauticform-errormsg { display: block; color: red; margin-top: 2px; }
+  .mauticform-selectbox, .mauticform-input, .mauticform-textarea { width: 100%; padding: 0.5em 0.5em; border: 1px solid #CCC; background: #fff; box-shadow: 0px 0px 0px #fff inset; border-radius: 4px; box-sizing: border-box; }
+  .mauticform-checkboxgrp-row {}
+  .mauticform-checkboxgrp-label { font-weight: normal; }
+  .mauticform-checkboxgrp-checkbox {}
+  .mauticform-radiogrp-row {}
+  .mauticform-radiogrp-label { font-weight: normal; }
+  .mauticform-radiogrp-radio {}
+  .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default { color: #5d6c7c;background-color: #ffffff;border-color: #dddddd;}
+  .mauticform-button-wrapper .mauticform-button, .mauticform-pagebreak-wrapper .mauticform-pagebreak { display: inline-block;margin-bottom: 0;font-weight: 600;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;white-space: nowrap;padding: 6px 12px;font-size: 13px;line-height: 1.3856;border-radius: 3px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+  .mauticform-button-wrapper .mauticform-button.btn-default[disabled], .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default[disabled] { background-color: #ffffff; border-color: #dddddd; opacity: 0.75; cursor: not-allowed; }
+  .mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }
+
